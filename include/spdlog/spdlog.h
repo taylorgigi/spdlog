@@ -80,6 +80,10 @@ std::shared_ptr<logger> basic_logger_st(const std::string& logger_name, const fi
 std::shared_ptr<logger> rotating_logger_mt(const std::string& logger_name, const filename_t& filename, size_t max_file_size, size_t max_files);
 std::shared_ptr<logger> rotating_logger_st(const std::string& logger_name, const filename_t& filename, size_t max_file_size, size_t max_files);
 
+// Create and register multi/signle thread hourly file logger
+std::shared_ptr<logger> hourly_logger_mt(const std::string& logger_name, const filename_t& filename, size_t max_file_size);
+std::shared_ptr<logger> hourly_logger_st(const std::string& logger_name, const filename_t& filename, size_t max_file_size);
+
 //
 // Create file logger which creates new file on the given time (default in  midnight):
 //

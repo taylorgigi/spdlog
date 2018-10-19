@@ -75,7 +75,6 @@ TEST_CASE("rotating_file_logger2", "[rotating_logger]]")
     REQUIRE(get_filesize(filename1) <= 1024);
 }
 
-
 TEST_CASE("daily_logger", "[daily_logger]]")
 {
     prepare_logdir();
